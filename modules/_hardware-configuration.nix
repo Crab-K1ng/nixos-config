@@ -1,5 +1,5 @@
 # modules/hardware-configuration.nix
-{ config, lib, pkgs, modulesPath, ... }:
+{ lib, modulesPath, ... }:
 
 {
   imports =
