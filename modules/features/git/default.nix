@@ -11,7 +11,7 @@
   perSystem = { pkgs, ... }: {
     packages.git = inputs.wrappers.wrappers.git.wrap {
       inherit pkgs;
-      setting = {
+      settings = {
         user = {
           name = "CrabKing";
           email = "127689590+Crab-K1ng@users.noreply.github.com";
