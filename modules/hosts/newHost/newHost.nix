@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.nixosConfigurations.host = inputs.nixpkgs.lib.nixosSystem {
+  flake.nixosConfigurations.newHost = inputs.nixpkgs.lib.nixosSystem {
     modules = with self.nixosModules; [
       hostConfiguration
       system
