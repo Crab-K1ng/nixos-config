@@ -6,6 +6,7 @@
         user
         networking
         bootloader
+        imports
       ];
     in
     {
