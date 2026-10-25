@@ -3,6 +3,7 @@
     modules = with self.nixosModules; [
       newHostConfiguration
       system
+      zsh
     ];
   };
 }
