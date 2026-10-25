@@ -1,1 +1,3 @@
-result
+.session
+/nixos.qcow2
+/result
