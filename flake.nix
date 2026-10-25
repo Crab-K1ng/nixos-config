@@ -10,11 +10,11 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
 
-
   };
 
-  outputs = inputs:
-  # Pass all inputs to outputs
+  outputs =
+    inputs:
+    # Pass all inputs to outputs
     inputs.flake-parts.lib.mkFlake {
       # Call mkFlake from flake-parts module
       inherit inputs; # Inherit inputs (required to get correct arch for self')
