@@ -3,9 +3,11 @@
     { ... }:
     let
       modules = with self.nixosModules; [
-        user
-        networking
+        nix
         bootloader
+        user
+        locale
+        networking
         imports
       ];
     in
