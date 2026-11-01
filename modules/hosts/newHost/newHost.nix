@@ -3,7 +3,13 @@
     modules = with self.nixosModules; [
       newHostConfiguration
       system
+      desktop
+      font
       fastfetch
+      fish
+      git
+      lazygit
+      brave
     ];
   };
 }
