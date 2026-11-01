@@ -24,11 +24,13 @@
         extraOpts = {
 
           # stuff i want
-          MemorySaverEnabled = true;
           TranslateEnabled = true;
-
           "SpellcheckEnabled" = true;
           "SpellcheckLanguage" = [ "en-GB" ];
+
+          # enable memory saver
+          HighEfficiencyModeEnabled = true;
+          MemorySaverModeSavings = 1; # Balanced
 
           # UI
           BookmarkBarEnabled = false;
@@ -57,10 +59,10 @@
           MetricsReportingEnabled = false;
 
           ExtensionSettings = {
-            darkReaderExt = {
+            "${darkReaderExt}" = {
               toolbar_pin = "default_pinned";
             };
-            protonPassExt = {
+            "${protonPassExt}" = {
               toolbar_pin = "default_pinned";
             };
           };
