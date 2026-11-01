@@ -22,5 +22,13 @@
 
   swapDevices = [ ];
 
+  #for vms
+  virtualisation.vmVariant = {
+    virtualisation = {
+      memorySize = 4096; # Set RAM to 4096 MiB (4 GB)
+      cores = 4; # Set CPU cores
+    };
+  };
+
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 }
